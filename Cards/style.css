@@ -18,8 +18,12 @@ body {
   border: 2px solid red;
 }
 
+/* .card-container > * {
+  flex-basis: 18.23%;
+} */
+
 .card {
-  width: 325px;
+  width: 350px;
   background-color: #f0f0f0;
   border-radius: 8px;
   overflow: hidden;
