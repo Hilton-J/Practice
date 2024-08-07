@@ -24,4 +24,17 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 5rem;
+  min-width: 80vw;
+}
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: 1/4; /*it will end at 4 because I have 3 elements which make up a grid of 4 lines of rows */
+  min-width: 300px;
 }
