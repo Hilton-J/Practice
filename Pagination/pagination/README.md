@@ -13,3 +13,4 @@ Currently, two official plugins are available:
 **axios** : npm i axios --save
 **REACT-SPINNERS** : npm i react-spinners --save
 **Flowbite** : npm i flowbite
+**REACT-MORDERN-DRAWER** : npm i --save react-modern-drawer

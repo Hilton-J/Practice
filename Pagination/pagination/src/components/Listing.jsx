@@ -4,6 +4,7 @@ import Spinner from './Spinner'
 import ReactPaginate from 'react-paginate'
 // import Drawer2 from './drawer/Drawer2'
 import Drawer from './Drawer'
+import Drawer2 from './drawer/Drawer2'
 
 
 const Listing = () => {
@@ -19,7 +20,7 @@ const Listing = () => {
 
   useEffect(() => {
     const fetchList = async () => {
-      const { data } = await axios.get(`https://api.fbi.gov/wanted/v1/list?page=${page}`);
+      const { data } = await axios.get(`https://api.fbigov/wanted/v1/list?${page}`); //https://api.fbi.gov/wanted/v1/list?page=${page}
 
 
       setList(data.items);
@@ -39,6 +40,7 @@ const Listing = () => {
   return (
     <div className="flex justify-center items-center flex-col">
       <Drawer />
+      <Drawer2 />
       {loading ? <Spinner loading={loading} /> : (
         <div className="grid md:grid-cols-2 lg:grid-cols-4 w-[60%] gap-x-[3rem] gap-y-[0.5rem] ">
           {list.map((criminal) => (
