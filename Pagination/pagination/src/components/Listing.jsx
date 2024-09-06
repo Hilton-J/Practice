@@ -1,24 +1,44 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Spinner from './Spinner'
+import ReactPaginate from 'react-paginate'
 
 
 const Listing = () => {
   const [list, setList] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const [page, setPage] = useState(1);
+  const [listLength, setListLength] = useState(0);
+
+  const itemsPerPage = 20;
+
+  const pageCount = Math.ceil(listLength / itemsPerPage);
+  console.log(page);
+
+
   useEffect(() => {
     const fetchList = async () => {
-      const { data } = await axios.get('https://api.fbi.gov/wanted/v1/list');
+      const { data } = await axios.get(`https://api.fbi.gov/wanted/v1/list?page=${page}`);
+
+
       setList(data.items);
+      setListLength(data.total);
       setLoading(false);
     };
     fetchList();
-  }, [])
+  }, [page])
+
+  // Invoke when user click to request another page.
+  const handlePageClick = (event) => {
+    window.scroll(0, 0);
+    console.log(event.selected);
+    setPage(event.selected + 1);
+  };
 
   return (
-    <div className="flex justify-center">
-      {loading ? <Spinner /> : (
+    <div className="flex justify-center items-center flex-col">
+      {loading ? <Spinner loading={loading} /> : (
         <div className="grid md:grid-cols-2 lg:grid-cols-4 w-[60%] gap-x-[3rem] gap-y-[0.5rem] ">
           {list.map((criminal) => (
             <div
@@ -39,6 +59,22 @@ const Listing = () => {
           ))}
         </div>
       )}
+      <div className='flex w-full justify-center'>
+        <ReactPaginate
+          breakLabel='...'
+          nextLabel="next >"
+          nextLinkClassName=" px-3 py-2 rounded-lg hover:bg-blue-400 hover:text-white"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={5}
+          pageCount={pageCount}
+          previousLabel="< previous"
+          previousLinkClassName='px-3 py-2 rounded-lg hover:bg-blue-400 hover:text-white'
+          renderOnZeroPageCount={undefined}
+          containerClassName='flex space-x-5'
+          pageLinkClassName='hover:bg-blue-400 hover:text-white px-3 py-2 rounded-lg'
+          activeLinkClassName='bg-blue-400 px-3 py-2 rounded-lg text-white'
+        />
+      </div>
     </div>
   )
 }
