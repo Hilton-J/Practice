@@ -12,3 +12,4 @@ Currently, two official plugins are available:
 **REACT PAGINATION** : npm i react-paginate
 **axios** : npm i axios --save
 **REACT-SPINNERS** : npm i react-spinners --save
+**Flowbite** : npm i flowbite

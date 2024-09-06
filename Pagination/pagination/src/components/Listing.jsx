@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Spinner from './Spinner'
 import ReactPaginate from 'react-paginate'
+// import Drawer2 from './drawer/Drawer2'
+import Drawer from './Drawer'
 
 
 const Listing = () => {
@@ -14,8 +16,6 @@ const Listing = () => {
   const itemsPerPage = 20;
 
   const pageCount = Math.ceil(listLength / itemsPerPage);
-  console.log(page);
-
 
   useEffect(() => {
     const fetchList = async () => {
@@ -31,13 +31,14 @@ const Listing = () => {
 
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {
-    window.scroll(0, 0);
+    // window.scroll(0, 0);
     console.log(event.selected);
     setPage(event.selected + 1);
   };
 
   return (
     <div className="flex justify-center items-center flex-col">
+      <Drawer />
       {loading ? <Spinner loading={loading} /> : (
         <div className="grid md:grid-cols-2 lg:grid-cols-4 w-[60%] gap-x-[3rem] gap-y-[0.5rem] ">
           {list.map((criminal) => (
@@ -51,7 +52,7 @@ const Listing = () => {
                     criminal.images[0]?.original || "/fallback-image.png"
                   }
                   alt={criminal.title}
-                  className="size-full"
+                  className="size-full max-h-[20rem]"
                 />
               </div>
               <h3>{criminal.title}</h3>
@@ -69,10 +70,11 @@ const Listing = () => {
           pageCount={pageCount}
           previousLabel="< previous"
           previousLinkClassName='px-3 py-2 rounded-lg hover:bg-blue-400 hover:text-white'
-          renderOnZeroPageCount={undefined}
+          renderOnZeroPageCount={null}
           containerClassName='flex space-x-5'
           pageLinkClassName='hover:bg-blue-400 hover:text-white px-3 py-2 rounded-lg'
           activeLinkClassName='bg-blue-400 px-3 py-2 rounded-lg text-white'
+          disabledLinkClassName={'hover:cursor-not-allowed hover:bg-white hover:text-black'}
         />
       </div>
     </div>
