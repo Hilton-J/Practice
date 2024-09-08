@@ -1,4 +1,4 @@
-import PropType from 'prop-types'
+import PropTypes from 'prop-types'
 import FadeLoader from 'react-spinners/FadeLoader'
 
 // const override = {
@@ -11,13 +11,13 @@ const Spinner = ({ loading }) => {
   return (
     <FadeLoader color='#2563eb'
       loading={loading}
-      // cssOverride={override}
+    // cssOverride={override}
     />
   )
 };
 
 Spinner.propTypes = {
-  loading: PropType.bool
+  loading: PropTypes.bool
 };
 
 export default Spinner

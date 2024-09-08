@@ -2,7 +2,7 @@ import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 import { useState } from 'react'
 
-const style = { //Drawer custom styles
+const style = { //Drawer custom styles vanilla css
   background: 'red',
 };
 
@@ -16,14 +16,14 @@ const Drawer2 = () => {
     <>
       <button onClick={toggleDrawer} >Show</button>
       <Drawer
-        
+
         open={isOpen}
         onClose={toggleDrawer}
-        direction='top'
+        direction='right'
         // size={'50vw'}
         className=''
         style={style}
-        // duration={1000}
+        duration={1000}
         overlayOpacity={0.8}
         // overlayColor={'black'}
         enableOverlay={true}
