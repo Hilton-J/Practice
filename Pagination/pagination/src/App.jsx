@@ -1,11 +1,12 @@
-import Listing from "./components/Listing"
+import Glassmorphism from "./components/Glassmorphism"
+
 
 
 function App() {
 
   return (
     <>
-      <Listing />
+      <Glassmorphism />
     </>
   )
 }

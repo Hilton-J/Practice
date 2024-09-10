@@ -6,7 +6,14 @@ export default {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'back': "url('/src/assets/back.jpg')"
+      },
+      fontFamily: {
+        'card': ['Inconsolata']
+      }
+    },
   },
   plugins: [
     'flowbite/plugin'
