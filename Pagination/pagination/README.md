@@ -14,3 +14,4 @@ Currently, two official plugins are available:
 **REACT-SPINNERS** : npm i react-spinners --save
 **Flowbite** : npm i flowbite
 **REACT-MORDERN-DRAWER** : npm i --save react-modern-drawer
+**React-Icons** : npm i react-icons --save
