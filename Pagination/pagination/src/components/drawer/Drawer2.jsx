@@ -1,45 +1,45 @@
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
-import { useState } from 'react'
+import PropTypes from 'prop-types'
+import Button from "../Button";
 
-const style = { //Drawer custom styles vanilla css
-  background: 'red',
-};
+// const style = { //Drawer custom styles vanilla css
+//   background: 'red',
+// };
 
-const Drawer2 = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState)
-  };
+const Drawer2 = ({ toggleDrawer, isOpen }) => {
 
   return (
-    <>
-      <button onClick={toggleDrawer} >Show</button>
-      <Drawer
+    <Drawer
 
-        open={isOpen}
-        onClose={toggleDrawer}
-        direction='right'
-        // size={'50vw'}
-        className=''
-        style={style}
-        duration={1000}
-        overlayOpacity={0.8}
-        // overlayColor={'black'}
-        enableOverlay={true}
-        // zIndex={100}
-        lockBackgroundScroll={true}
-      >
-        <div className='flex justify-between p-2 border-2 w-full'>
-          Hello World
-          <span>
-            <button onClick={toggleDrawer}>Close</button>
-          </span>
-        </div>
-      </Drawer>
-    </>
+      open={isOpen}
+      onClose={toggleDrawer}
+      direction='right'
+      className=' h-full'
+      duration={1000}
+    >
+      <div className="flex flex-col items-center gap-9 w-full justify-end text-black ">
+        <ul className="flex md:flex-row flex-col gap-4 md:gap-8 items-center text-black">
+          <li>
+            <a href="/search" className={`hover:text-[#5ebb79]`}>About Me</a>
+          </li>
+          <li>
+            <a href="/movies" className={`hover:text-[#5ebb79]`}>Portfolio</a>
+          </li>
+          <li>
+            <a href="/tv-shows" className={`hover:text-[#5ebb79]`}>Contact</a>
+          </li>
+        </ul>
+        <div className="w-fit mt-auto"><Button text={'LOG IN'} /></div>
+      </div>
+    </Drawer>
   )
-}
+};
+
+Drawer2.propTypes = {
+  isOpen: PropTypes.bool,
+  toggleDrawer: PropTypes.func
+};
 
 export default Drawer2
 
