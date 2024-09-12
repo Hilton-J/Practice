@@ -7,10 +7,10 @@ import Button from "./Button";
 const Glassmorphism = () => {
   return (
     // <section className="h-screen bg-back bg-no-repeat bg-cover bg-center flex justify-center items-center font-card font-semibold flex-col gap-6">
-    <section className="h-full xl:h-screen bg-white/50 dark:bg-black/35 w-full flex flex-col backdrop-blur-lg text-black dark:text-white border-b border-textSecondary/35 ">
+    <section className="bg-white/50 dark:bg-black/35 w-full flex flex-col backdrop-blur-lg text-black dark:text-white border-b border-textSecondary/35 sm:h-screen">
       <NavBar />
 
-      <div className='px-12 py-6 h-full flex items-center justify-between sm:flex-row flex-col'>
+      <div className='px-12 py-6 h-full flex items-center justify-between sm:flex-row flex-col mb-10 md:mb-20  md:mt-10 gap-6'>
         <div className='flex items-center sm:items-start justify-center flex-col h-full w-full min-w-72 flex-1'>
           <h4 className='text-green-400 sm:text-xl lg:text-3xl xl:text-4xl'>Hello, I am</h4>
           <h1 className='text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold '>
@@ -24,8 +24,11 @@ const Glassmorphism = () => {
           </div>
         </div>
 
-        <div className='flex justify-center flex-col flex-1 h-full'>
-          <img src={Hero} alt='Hero SVG' className='h-full' />
+        <div className='flex flex-1'>
+
+          <img src={Hero} alt='Hero SVG' className='' />
+
+
         </div>
       </div>
     </section>
