@@ -1,25 +1,27 @@
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 import PropTypes from 'prop-types'
-import Button from "../Button";
+// import Button from "../Button";
 
 // const style = { //Drawer custom styles vanilla css
 //   background: 'red',
 // };
 
-const Drawer2 = ({ toggleDrawer, isOpen }) => {
-
+const Drawer2 = ({ isOpen, toggleDrawer }) => {
   return (
     <Drawer
-
       open={isOpen}
       onClose={toggleDrawer}
       direction='right'
-      className=' h-full'
-      duration={1000}
+      className={` h-screen p-4 ${isOpen ? 'flex flex-col' : 'hidden'}`} // Adds w-full when open, w-0 when closed
+      // style={{ position: 'hidden', top: 0, right: 0, zIndex: 50 }}
+      duration={2000}
     >
-      <div className="flex flex-col items-center gap-9 w-full justify-end text-black ">
-        <ul className="flex md:flex-row flex-col gap-4 md:gap-8 items-center text-black">
+      <div className='border-b-2 border-[#5ebb79] '>
+        <h1 className='text-xl w-fit sm:text-2xl font-bold text-green-400 font-signature min-w-fit'>LOGO</h1>
+      </div>
+      <div className=" text-black h-full">
+        <ul className=" gap-4 items-start mb-auto">
           <li>
             <a href="/search" className={`hover:text-[#5ebb79]`}>About Me</a>
           </li>
@@ -30,7 +32,7 @@ const Drawer2 = ({ toggleDrawer, isOpen }) => {
             <a href="/tv-shows" className={`hover:text-[#5ebb79]`}>Contact</a>
           </li>
         </ul>
-        <div className="w-fit mt-auto"><Button text={'LOG IN'} /></div>
+        <button className="bg-[#5ebb79] hover:bg-green-400 text-white px-4 py-2 rounded-lg text-sm sm:text-base mt-auto">LOG IN</button>
       </div>
     </Drawer>
   )

@@ -15,3 +15,4 @@ Currently, two official plugins are available:
 **Flowbite** : npm i flowbite
 **REACT-MORDERN-DRAWER** : npm i --save react-modern-drawer
 **React-Icons** : npm i react-icons --save
+**Email-JS** : npm i --save @emailjs/browser

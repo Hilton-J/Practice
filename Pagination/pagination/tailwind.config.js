@@ -35,8 +35,16 @@ export default {
         'custom-position': '0 0, 0 0, 37px 65px, 37px 65px, 0 0, 37px 65px',
       },
       colors: {
-        'custom-bg': '#182235',
+        'custom-bg': '#454b69',
+        'primary': '#4ade80',
+        'secondary': '#42c773',
+        'textPrimary': '#d0d2d5',
+        'textSecondary': '#bbbdbf',
       },
+      boxShadow: {
+        'customHover': '-1px 3px 20px 6px rgba(66, 199, 115, 0.88)',
+        'custom': '-1px 3px 31px -4px rgba(66,199,115,0.88)'
+      }
     },
   },
   plugins: [
