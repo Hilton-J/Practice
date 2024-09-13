@@ -19,10 +19,10 @@ const NavBar = () => {
   return (
     <header className="">
       <nav className="flex justify-between items-center py-6 px-12 ">
-        <h1 className='text-xl w-fit sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary font-signature min-w-fit'>LOGO</h1>
+        <h1 className='text-xl w-fit sm:text-2xl lg:text-3xl font-bold text-primary font-signature min-w-fit'>LOGO</h1>
 
         <div className="md:flex hidden items-center gap-9 w-full justify-end">
-          <ul className="flex md:flex-row flex-col gap-4 md:gap-8 items-center sm:text-xl xl:text-3xl">
+          <ul className="flex md:flex-row flex-col gap-4 md:gap-8 items-center sm:text-xl xl:text-2xl">
             <li>
               <a href="#about" className={`hover:text-secondary`}>About Me</a>
             </li>

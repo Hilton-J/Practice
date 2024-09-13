@@ -16,3 +16,4 @@ Currently, two official plugins are available:
 **REACT-MORDERN-DRAWER** : npm i --save react-modern-drawer
 **React-Icons** : npm i react-icons --save
 **Email-JS** : npm i --save @emailjs/browser
+**React-Tostify** : npm i --save react-toastify
