@@ -1,11 +1,13 @@
-import Skills from './components/infinite'
+// import Skills from './components/infinite'
 import './App.css'
+import SwiperComponent from './components/SwiperComponent'
 
 function App() {
 
   return (
     <>
-      <Skills />
+      {/* <Skills /> */}
+      <SwiperComponent/>
     </>
   )
 }
