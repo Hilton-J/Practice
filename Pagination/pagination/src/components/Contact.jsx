@@ -35,19 +35,19 @@ const Contact = () => {
             </form>
 
             <div className='flex flex-col gap-[1.2rem]'>
-              <article className='p-6 text-center '>
+              <article className='p-6 text-center border-2 border-primary'>
                 <h4>Email</h4>
                 <h5>lhmajola@outlook.com</h5>
                 <a href='mailto: lhmajola@outlook.com' target='_blank' rel='noreferrer'>Send a message</a>
               </article>
 
-              <article className='p-6 text-center  '>
+              <article className='p-6 text-center border-2 border-primary '>
                 <h4>Messanger</h4>
                 <h5>lwandilemajola</h5>
                 <a href='https://m.me/lwandile.majola.9843' target='_blank' rel='noreferrer'>Send a message</a>
               </article>
 
-              <article className='p-6 text-center  transition-all'>
+              <article className='p-6 text-center border-2 border-primary transition-all'>
                 <h4>WhatsApp</h4>
                 <h5>+27123456789</h5>
                 <a href='https://wa.me/27744806658' target='_blank' rel='noreferrer'>Send a message</a>
