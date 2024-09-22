@@ -12,16 +12,16 @@ export default {
         'back': "url('/src/assets/back.jpg')",
         'custom-pattern': `
           /*Side Faces*/
-          linear-gradient(30deg, #5ebb79 12%, transparent 12.5%, transparent 87%, #5ebb79 87.5%, #5ebb79),
-          linear-gradient(150deg, #5ebb79 12%, transparent 12.5%, transparent 87%, #5ebb79 87.5%, #5ebb79),
+          linear-gradient(30deg, #5ebb79 13%, transparent 12.5%, transparent 87%, #5ebb79 0%, #5ebb79), /*bottom left*/
+          linear-gradient(150deg, #5ebb79 13%, transparent 12.5%, transparent 87%, #5ebb79 0%, #5ebb79), /*top left front*/
 
           /*Top Faces*/
           linear-gradient(30deg, #5ebb79 12%, transparent 12.5%, transparent 87%, #5ebb79 87.5%, #5ebb79),
           linear-gradient(150deg, #5ebb79 12%, transparent 12.5%, transparent 87%, #5ebb79 87.5%, #5ebb79),
 
           /*Overlaying diagonal grid lines*/
-          linear-gradient(60deg, rgba(94, 187, 121, 0.467) 25%, transparent 25.5%, transparent 75%, rgba(94, 187, 121, 0.467) 0, rgba(94, 187, 121, 0.467)),
-          linear-gradient(60deg, rgba(94, 187, 121, 0.467) 25%, transparent 25.5%, transparent 75%, rgba(94, 187, 121, 0.467) 0, rgba(94, 187, 121, 0.467))
+          linear-gradient(60deg, rgba(94, 187, 121, 0.3) 26%, transparent 25.5%, transparent 75%, rgba(94, 187, 121, 0.2) 0, rgba(94, 187, 121, 0.467)),
+          linear-gradient(60deg, rgba(94, 187, 121, 0.467) 26%, transparent 25.5%, transparent 75%, rgba(94, 187, 121, 0.367) 0, rgba(94, 187, 121, 0.467))
         `
       },
       fontFamily: {

@@ -12,9 +12,6 @@ const NavBar = () => {
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState)
   };
-  // const toggleDrawer = () => {
-  //   setIsOpen((prevState) => !prevState)
-  // };
 
   return (
     <header className="">
@@ -24,10 +21,10 @@ const NavBar = () => {
         <div className="md:flex hidden items-center gap-9 w-full justify-end">
           <ul className="flex md:flex-row flex-col gap-4 md:gap-8 items-center sm:text-xl xl:text-2xl">
             <li>
-              <a href="#about" className={`hover:text-secondary`}>About Me</a>
+              <a href="#about" className={`hover:text-secondary`}>About</a>
             </li>
             <li>
-              <a href="/movies" className={`hover:text-secondary`}>Portfolio</a>
+              <a href="#portfolio" className={`hover:text-secondary`}>Portfolio</a>
             </li>
             <li>
               <a href="#contact" className={`hover:text-secondary`}>Contact</a>

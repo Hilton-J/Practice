@@ -1,4 +1,5 @@
 import Contact from "./components/Contact"
+import Footer from "./components/footer"
 import Glassmorphism from "./components/Glassmorphism"
 
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Glassmorphism />
       <Contact />
+      <Footer />
     </>
   )
 }

@@ -7,7 +7,7 @@
 
 @layer base {
   body{
-    @apply dark:bg-custom-bg dark:text-textPrimary  bg-custom-size bg-custom-position; /*bg-custom-pattern*/
+    @apply bg-custom-bg text-textPrimary bg-custom-size bg-custom-position ; /*bg-custom-pattern*/
   };
   html{
     @apply scroll-smooth; /*bg-custom-pattern*/

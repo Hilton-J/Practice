@@ -7,7 +7,7 @@ import Button from "./Button";
 const Glassmorphism = () => {
   return (
     // <section className="h-screen bg-back bg-no-repeat bg-cover bg-center flex justify-center items-center font-card font-semibold flex-col gap-6">
-    <section className="bg-white/50 dark:bg-black/35 w-full flex flex-col backdrop-blur-lg text-black dark:text-white border-b border-textSecondary/35 sm:h-screen">
+    <section id='home' className="bg-black/35 w-full flex flex-col backdrop-blur-xl text-white">
       <NavBar />
 
       <div className='px-12 py-6 h-full flex items-center justify-between sm:flex-row flex-col mb-10 md:mb-20  md:mt-10 gap-6'>
