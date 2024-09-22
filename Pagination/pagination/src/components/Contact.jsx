@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser'
 import HeaderTitle from './HeaderTitle'
 import Button from './Button'
 import { HiOutlineMail } from "react-icons/hi";
+import { FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
 
@@ -27,23 +28,23 @@ const Contact = () => {
         <HeaderTitle title={'Contact'} text={'Get In Touch'} />
 
         <div className='grid md:grid-cols-[28%_58%] gap-10 md:gap-[14%] w-7/12 md:w-11/12 lg:w-8/12 md:justify-center my-12'>
-          <div className='flex flex-col gap-[1.2rem]'>
-            <article className='p-6 text-center rounded-3xl space-y-2 bg-black/50 backdrop-blur-xl'>
+          <div className='flex flex-col gap-[1.2rem] text-lg'>
+            <article className='p-6 text-center rounded-3xl space-y-2 bg-black/50 backdrop-blur-xl border border-transparent hover:border-primary hover:bg-transparent transition-all duration-700'>
               <HiOutlineMail className='mx-auto mb-3 text-primary' />
               <h4>Email</h4>
               <h5>lhmajola@outlook.com</h5>
               <a href='mailto: lhmajola@outlook.com' target='_blank' rel='noreferrer'>Send a message</a>
             </article>
 
-            <article className='p-6 text-center rounded-3xl space-y-2 bg-black/50 backdrop-blur-xl'>
-              <HiOutlineMail className='mx-auto mb-3 text-primary' />
-              <h4>Messanger</h4>
-              <h5>lwandilemajola</h5>
-              <a href='https://m.me/lwandile.majola.9843' target='_blank' rel='noreferrer'>Send a message</a>
+            <article className='p-6 text-center rounded-3xl space-y-2 bg-black/50 backdrop-blur-xl border border-transparent hover:border-primary hover:bg-transparent transition-all duration-700'>
+              <FaLinkedin className='mx-auto mb-3 text-primary' />
+              <h4>LinkedIn</h4>
+              <h5>Lwandile Majola</h5>
+              <a href='https://www.linkedin.com/in/lwandile-majola' target='_blank' rel='noreferrer'>Send a message</a>
             </article>
 
-            <article className='p-6 text-center rounded-3xl space-y-2 bg-black/50 backdrop-blur-xl'>
-              <HiOutlineMail className='mx-auto mb-3 text-primary' />
+            <article className='p-6 text-center rounded-3xl space-y-2 bg-black/50 backdrop-blur-xl border border-transparent hover:border-primary hover:bg-transparent transition-all duration-700'>
+              <FaWhatsapp className='mx-auto mb-3 text-primary' />
               <h4>WhatsApp</h4>
               <h5>+27123456789</h5>
               <h5><a href='https://wa.me/27744806658' target='_blank' rel='noreferrer'>Send a message</a></h5>
