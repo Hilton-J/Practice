@@ -1,4 +1,4 @@
-// import Master from '../assets/mastercard.svg' 
+// import Master from '../assets/mastercard.svg';
 import Hero from '../assets/hero.svg'
 import NavBar from './NavBar'
 import Button from "./Button";
@@ -9,11 +9,10 @@ const Glassmorphism = () => {
     // <section className="h-screen bg-back bg-no-repeat bg-cover bg-center flex justify-center items-center font-card font-semibold flex-col gap-6">
     <section id='home' className="bg-black/35 w-full flex flex-col backdrop-blur-xl text-white">
       <NavBar />
-
       <div className='px-12 py-6 h-full flex items-center justify-between sm:flex-row flex-col mb-10 md:mb-20  md:mt-10 gap-6'>
         <div className='flex items-center sm:items-start justify-center flex-col h-full w-full min-w-72 flex-1'>
           <h4 className='text-green-400 sm:text-xl lg:text-3xl xl:text-4xl'>Hello, I am</h4>
-          <h1 className='text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold '>
+          <h1 className='text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold'>
             Lwandile Majola
             <span className='text-primary'>.</span>
             {/* <Typewriter text={'Lwandile Majola'} delay={300} infinite /> */}
@@ -23,12 +22,8 @@ const Glassmorphism = () => {
             <Button text={'DOWNLOAD CV'} />
           </div>
         </div>
-
         <div className='flex flex-1'>
-
           <img src={Hero} alt='Hero SVG' className='' />
-
-
         </div>
       </div>
     </section>

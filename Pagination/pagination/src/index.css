@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body{
-    @apply bg-custom-bg text-textPrimary bg-custom-size bg-custom-position ; /*bg-custom-pattern*/
-  };
-  html{
+  body {
+    @apply bg-custom-bg text-textPrimary bg-custom-size bg-custom-position; /*bg-custom-pattern*/
+  }
+  html {
     @apply scroll-smooth; /*bg-custom-pattern*/
   }
 }
