@@ -44,6 +44,9 @@ export default {
       boxShadow: {
         'customHover': '-1px 3px 20px 6px rgba(66, 199, 115, 0.88)',
         'custom': '-1px 3px 31px -4px rgba(66,199,115,0.88)'
+      },
+      gridTemplateColumns: {
+        'gridCustom': 'repeat(auto-fit, minmax(4rem, 1fr))'
       }
     },
   },

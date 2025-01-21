@@ -1,6 +1,6 @@
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { useState } from 'react';
-import Button from "./Button";
+// import Button from "./Button";
 import Drawer2 from "./drawer/Drawer2";
 // import DrawerNavBar from "./DrawerNavBar";
 
@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="">
+    <header className="container mx-auto">
       <nav className="flex justify-between items-center py-6 px-12 ">
         <h1 className='text-xl w-fit sm:text-2xl lg:text-3xl font-bold text-primary font-signature min-w-fit'>LOGO</h1>
 
@@ -30,7 +30,7 @@ const NavBar = () => {
               <a href="#contact" className={`hover:text-secondary`}>Contact</a>
             </li>
           </ul>
-          <div className="w-fit"><Button text={'LOG IN'} /></div>
+          {/* <div className="w-fit"><Button text={'CONTACT'} /></div> */}
         </div>
 
         <div className="flex items-center md:hidden gap-4">
