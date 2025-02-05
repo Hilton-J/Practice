@@ -4,7 +4,7 @@ import { IoLogoTwitter } from "react-icons/io";
 
 const Footer = () => {
     return (
-        <footer className="bg-black/35 p-10 text-center space-y-5">
+        <footer className="bg-black/35 p-10 text-center space-y-5 backdrop-blur-3xl">
             <div className="text-4xl "><a href='#home' className='hover:text-primary'>LWANDILE MAJOLA</a></div>
 
             <ul className='flex justify-center gap-5 flex-wrap'>

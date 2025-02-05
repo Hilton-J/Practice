@@ -20,7 +20,7 @@ const Glassmorphism = () => {
             </h1>
             <h3 className='text-lg sm:text-2xl lg:text-3xl xl:text-4xl text-textSecondary mt-6'>Full Stack Develper</h3>
             <div className="w-fit mt-6">
-              <Button text={'DOWNLOAD CV'} />
+              <Button text={'DOWNLOAD CV'} primary={true} hrefProp={''} />
             </div>
           </div>
           <div className='flex flex-1 '>

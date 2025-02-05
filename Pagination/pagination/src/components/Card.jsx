@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types'
+import Button from './Button'
 const Card = ({ image, title, github, demo }) => {
   return (
-    <div className="bg-black/50 backdrop-blur-3xl border border-transparent hover:border-primary hover:bg-transparent transition-all duration-700 rounded-3xl p-5 grid grid-rows-subgrid row-span-3">
-      <div className='rounded-3xl overflow-hidden'>
+    <div className="bg-black/35 backdrop-blur-3xl border border-transparent hover:border-secondary hover:bg-transparent transition-all duration-700 rounded-3xl p-5 grid grid-rows-subgrid row-span-3">
+      <div className='rounded-3xl overflow-hidden h-60'>
         <img src={image} alt={title} className='size-full' />
       </div>
       <h3>{title}</h3>
-      <div className=' flex gap-5'>
-        <a href={github} target='_blank' className='border border-primary hover:border-transparent text-sm md:text-base px-3 md:px-6 py-2 rounded-lg cursor-pointer hover:bg-white hover:text-black block transition-all duration-300 text-primary'>GitHub</a>
-        <a href={demo} className='border border-transparent text-sm md:text-base px-3 md:px-6 py-2 rounded-lg cursor-pointer bg-primary hover:bg-white hover:text-black block transition-all duration-300 text-white' target='_blank' rel='noreferrer'>Live Demo</a>
+      <div className='flex gap-5'>
+        <Button text={'GitHub'} hrefProp={github} />
+        <Button text={'Live Demo'} primary={true} hrefProp={demo} />
       </div>
     </div>
   )

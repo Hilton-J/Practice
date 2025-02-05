@@ -11,6 +11,12 @@ const Portfolio = () => {
           {portfolioData.map((data, index) =>
             < Card key={index} image={data.image} title={data.title} github={data.github} demo={data.demo} />
           )}
+          {portfolioData.map((data, index) =>
+            < Card key={index} image={data.image} title={data.title} github={data.github} demo={data.demo} />
+          )}
+          {portfolioData.map((data, index) =>
+            < Card key={index} image={data.image} title={data.title} github={data.github} demo={data.demo} />
+          )}
         </div>
       </div>
     </section>
